@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <header> <!-- Navbar starts here -->
+    <div class="head"> <!-- Navbar starts here -->
         <h1 class="logo">Logo</h1>
         <nav>
           <ul>
@@ -19,19 +19,48 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-    </header> <!-- End navebar -->
-
-    <div class="content"> <!-- Content starts here -->
+    </div> <!-- End navebar -->
 
         <div class="section1"> <!-- Blog articles -->
-            <h2 class="blog">Recent Blogs</h2>
-            <ul class="blogList">
-                <li><a href="paint.html">Painting</a><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, labore ex! Possimus, eveniet, quae, itaque tempore culpa deserunt fugiat enim nam repellat eius labore cupiditate.</p></li>
-                <li><a href="cooking.html">Cooking</a><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, labore ex! Possimus, eveniet, quae, itaque tempore culpa deserunt fugiat enim nam repellat eius labore cupiditate.</p></li>
-                <li><a href="tools.html">Tools</a><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, labore ex! Possimus, eveniet, quae, itaque tempore culpa deserunt fugiat enim nam repellat eius labore cupiditate.</p></li>
-                <li><a href="travel.html">Travel</a><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, labore ex! Possimus, eveniet, quae, itaque tempore culpa deserunt fugiat enim nam repellat eius labore cupiditate.</p></li>
-            </ul>
-        </div> <!-- End Blogs -->
+            <h2>Recent Blogs</h2>
+
+            <div class="cardcontainer">
+
+                <div class="card">
+                    <div class="image"> <img src="img/paint.jpg" alt="Paint can"></div>
+                    <div class="text">
+                        <a href="paint.html">Painting Blog</a>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto harum rem praesentium sit odit. Porro neque distinctio ipsa autem animi?</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image"> <img src="img/tool.jpg" alt="Impact Driver"></div>
+                    <div class="text">
+                        <a href="tools.html">Tools Blog</a>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum necessitatibus aut exercitationem vel reiciendis doloremque tempore incidunt natus?</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image"> <img src="img/cook.jpg" alt="cooking"> </div>
+                    <div class="text">
+                        <a href="cooking.html">Cooking Blog</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla earum laboriosam facere.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image"> <img src="img/travel.jpg" alt="travel"> </div>
+                    <div class="text"><a href="travel.html">Travel Blog</a>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos cumque ipsa aliquid distinctio molestiae ipsum dicta.</p>
+                    </div>
+                </div>
+
+            </div> <!-- Card container end-->
+        </div> <!--End section one-->
+
     
         <div class="section2"> <!-- About information -->
             <h2 class="about">About Us</h2>

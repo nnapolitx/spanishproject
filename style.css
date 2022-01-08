@@ -1,113 +1,122 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 body {
-	margin: 0;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 400;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0em;
+    margin: 0em;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    background-color: #00b6b0;
 }
 
 ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
+}
+
+li {
+    padding-bottom: 1em;
 }
 
 a {
-    color: black;
     text-decoration: none;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+    color: hsl(0, 100%, 66%);
+    font-weight: 900;
 }
 
-header {
+p {
+    margin: 0em;
+    padding: 0em;
+}
+/* Navbar for mobile <40em or 640px */
+.head {
     background-color: rgb(150, 236, 201);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Desktop Nav starts here*/
-@media screen and (min-width: 800px) {
+/* Content area for mobile */
 
-    header {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-        margin-bottom: 5em;
-    }
-
-    .logo{
-        grid-column: 2/3;
-    }
-
-    nav {
-        grid-column: 3 / 4;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    nav ul {
-        display: flex;
-      }
-      
-      nav li {
-        margin-left: 3em;
-        margin-bottom: 0;
-        font-weight: 600;
-      }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 100%;
-    }
-
-    .section1 {
-        background-color: rgb(150, 236, 201);
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0em 3em;
-        margin-bottom: 2em;
-    }
-
-    .blogList {
-        display: flex;
-        justify-content: space-between;
-        gap: 1em;
-    }
-
-    .blogList li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-    }
-
-    .section2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0em 3em
-    }
-
-    .section3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0em 3em
-    }
-
-
+    /* Blog links and photos */
+.section1 {
+    margin-top: 5px;
+    background-color: hsl(0, 7%, 83%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.cardcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5em;
+}
+
+.image {
+    max-width: 400px;
+    margin-bottom: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: scale-down;
+}
+
+/* About us section*/
+.section2 {
+    padding: 0em 1em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 7%, 83%);
+    margin: 5px 0px;
+}
+
+/* Contact Section */
+.section3 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+    padding: 0em 1em;
+    background-color: hsl(0, 7%, 83%);
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.contactList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+/* Copyright footer */
+
+footer {
+    background-color: rgb(150, 236, 201);
+    text-align: center;
+    padding: .5em 1em;
+}
+
+/* below are media queries for screens pigger than 640 pixels */
