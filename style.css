@@ -35,13 +35,13 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 5px;
 }
 
 /* Content area for mobile */
 
     /* Blog links and photos */
 .section1 {
-    margin-top: 5px;
     background-color: hsl(0, 7%, 83%);
     display: flex;
     flex-direction: column;
@@ -120,3 +120,29 @@ footer {
 }
 
 /* below are media queries for screens pigger than 640 pixels */
+
+@media (min-width: 40em) {
+    .head {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0em 5em;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+    
+    .cardcontainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2em;
+    }
+
+    .card {
+        max-width: 350px;
+    }
+}
